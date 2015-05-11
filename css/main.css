@@ -4,6 +4,7 @@ body {
     font-family: Verdana, Geneva, sans-serif;
     line-height: 2em;
     text-transform: lowercase;
+    margin-left: 2em;
 }
 
 h3 {
@@ -21,6 +22,20 @@ date_info {
 
 other_info {
     display:block;
+}
+
+#education {
+    margin-top: 1em;
+}
+
+hr {
+    display: block;
+    height: 4px;
+    border: 0;
+    border-top: 2px solid #000000;
+    margin: 1em 0;
+    width: 80%;
+    padding: 0;
 }
 
 #nameandinfo {
