@@ -9,6 +9,7 @@ body {
 
 h3 {
     font-size: 1.5em;
+    display: inline;
 }
 
 title_info {
@@ -40,5 +41,11 @@ hr {
 
 #nameandinfo {
     text-transform: lowercase;
+    height: 4.5em;
+    line-height: 4.5em;
+}
+
+#nameandinfo a {
+    padding-left: 15px;
 }
 
