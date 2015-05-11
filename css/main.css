@@ -10,8 +10,17 @@ h3 {
     font-size: 1.5em;
 }
 
-#education > title_info {
+title_info {
     font-size: 1.3em;
+    display: block;
+}
+
+date_info {
+    display: block;
+}
+
+other_info {
+    display:block;
 }
 
 #nameandinfo {
