@@ -1,11 +1,14 @@
 body {
     font-size: 100%;
     background-color: white;
-    text-transform: lowercase;
     font-family: Verdana, Geneva, sans-serif;
 }
 
 h1 {
     font-size: 2.5em;
+}
+
+#nameandinfo {
+    text-transform: lowercase;
 }
 
