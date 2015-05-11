@@ -3,10 +3,15 @@ body {
     background-color: white;
     font-family: Verdana, Geneva, sans-serif;
     line-height: 2em;
+    text-transform: lowercase;
 }
 
 h3 {
     font-size: 1.5em;
+}
+
+#education > title_info {
+    font-size: 15em;
 }
 
 #nameandinfo {
