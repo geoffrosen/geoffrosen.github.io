@@ -23,6 +23,12 @@ other_info {
     display:block;
 }
 
+horizontal_rule {
+    min-height: 1.2em;
+    border-bottom: 4px solid #000000;
+    width: 100%;
+}
+
 #nameandinfo {
     text-transform: lowercase;
 }
