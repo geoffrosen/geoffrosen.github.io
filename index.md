@@ -7,6 +7,8 @@ title: home
 
 ### Currently a medical student at Columbia
 
+View my [linkedin](https://www.linkedin.com/in/geoffrosen)   
+
 View my partially completed [cv](cv.html)   
 
 View a project I am beginning to work on [here](https://github.com/geoffrosen/vaginal-microbiome)
