@@ -9,6 +9,10 @@ title: home
 
 View my [linkedin](https://www.linkedin.com/in/geoffrosen)   
 
-View my partially completed [cv](cv.html)   
+View my partially completed [cv]({{ site.url }}/cv.html)   
 
 View a project I am beginning to work on [here](https://github.com/geoffrosen/vaginal-microbiome)
+
+Here's a picture of me in Zanzibar, Tanzania last summer   
+
+![Jumping off boat]({{ site.url }}/img/zanzibar.jpg)
