@@ -5,7 +5,7 @@ title: home
 
 # Geoff Rosen
 
-### Currently a medical student at Columbia
+Currently a medical student at Columbia
 
 View my [linkedin](https://www.linkedin.com/in/geoffrosen)   
 
@@ -15,4 +15,4 @@ View a project I am beginning to work on [here](https://github.com/geoffrosen/va
 
 Here's a picture of me in Zanzibar, Tanzania last summer   
 
-![Jumping off boat]({{ site.url }}/img/zanzibar.jpg)
+![Jumping off boat]({{ site.url }}/img/zanzibar.jpg =500x)
