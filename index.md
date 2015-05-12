@@ -15,4 +15,4 @@ View a project I am beginning to work on [here](https://github.com/geoffrosen/va
 
 Here's a picture of me in Zanzibar, Tanzania last summer   
 
-![Jumping off boat]({{ site.url }}/img/zanzibar.jpg =500x)
+![Jumping off boat]({{ site.url }}/img/zanzibar.jpg)
