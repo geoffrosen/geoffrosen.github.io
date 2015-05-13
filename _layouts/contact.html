@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset=utf-8 />
+  <title> {% if page.title %} {{ page.title }} | {% endif %} geoffrosen.com </title>
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+{{ content }}
+<form action="https://getsimpleform.com/messages?form_api_token=cdf93971a669622c4196a3144b8be60a" method="post">
+  <!-- the redirect_to is optional, the form will redirect to the referrer on submission -->
+  <input type='hidden' name='redirect_to' value='{{ site.url }}' />
+  <!-- all your input fields here.... -->
+  Name:
+  <input type='text' name='name' />
+  Email:
+  <input type='text' name='email' />
+  Phone (if you want):
+  <input type='text' name='phone' />
+  What's up?
+  <textarea name="message"></textarea>
+  <input type='submit' value='send message' />
+</form>
+</body>
+</html>
