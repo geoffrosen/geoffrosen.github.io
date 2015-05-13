@@ -1,10 +1,10 @@
 ---
 layout: contact
-title: contact geoff
+title: contact
 ---
 
 # Geoff Rosen
 
-## Contact me with this form
+## Contact me
 
 ### I should get back to you shortly
