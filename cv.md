@@ -1,5 +1,5 @@
 ---
-title: test
+title: geoff's resume
 layout: cv
 ---
 
