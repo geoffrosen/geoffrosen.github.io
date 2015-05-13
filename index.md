@@ -7,6 +7,8 @@ title: home
 
 Currently a medical student at Columbia
 
+Contact me [here]({{ site.url }}/contact.html)
+
 View my [linkedin](https://www.linkedin.com/in/geoffrosen)   
 
 View my partially completed [resume]({{ site.url }}/cv.html)   
