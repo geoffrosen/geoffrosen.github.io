@@ -9,7 +9,7 @@ Currently a medical student at Columbia
 
 View my [linkedin](https://www.linkedin.com/in/geoffrosen)   
 
-View my partially completed [cv]({{ site.url }}/cv.html)   
+View my partially completed [resume]({{ site.url }}/cv.html)   
 
 View a project I am beginning to work on [here](https://github.com/geoffrosen/vaginal-microbiome)
 
