@@ -16,7 +16,7 @@ Geoffrey H Rosen
 MD degree
 
 **Emory University**; Atlanta, GA
-:   Aug 2010 to May 2018
+:   Aug 2010 to May 2014
 
 BA in Math and Economics. Minor in Spanish. Study abroad in Taichung, Taiwan and Buenos Aires, Argentina.
 
