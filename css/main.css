@@ -3,7 +3,6 @@ body {
     background-color: white;
     font-family: Verdana, Geneva, sans-serif;
     line-height: 2em;
-    text-transform: lowercase;
     margin-left: 2em;
 }
 
@@ -13,6 +12,52 @@ body {
 
 img {
     width: 80%;
+}
+
+.posts a {
+	text-decoration: none;
+}
+
+.posts ul {
+	list-style-type: none;
+}
+
+.posts h4 {
+	display: inline;
+}
+
+.navbar {
+    text-transform: lowercase;
+}
+
+.navbar a {
+	text-decoration: none;
+	color: black;
+}
+
+.navbar a:hover {
+	text-decoration: underline;
+}
+
+.navbar img {
+	padding-left: 3%;
+	width: 20px;
+}
+
+.navbar ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	padding-left: 3%;
+	display: inline;
+}
+
+.navbar li {
+	display: inline;
+}
+
+.navbar h1 {
+	display: inline;
 }
 
 h3 {
