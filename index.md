@@ -11,6 +11,6 @@ Contact me [here](/contact.html)
 
 {% include posts.html %}
 
-Here's a picture of me in Zanzibar, Tanzania last summer   
+### Some photos
 
-![Jumping off boat](/img/zanzibar.jpg)
+{% include photoposts.html %}

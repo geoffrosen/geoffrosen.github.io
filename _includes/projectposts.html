@@ -1,10 +1,10 @@
 <div class="posts">
 {% assign i=0 %}
 <ul>
-  {% for post in site.categories.happenings limit:5 %}
+  {% for post in site.categories.projects %}
     <li>
       <h4>{{ post.title }}</h4> {{ post.date | date: '%B %d, %Y' }}
-	  <ul><li>{{ post.excerpt }}</li></ul>
+	  <ul><li>{{ post.content }}</li></ul>
     </li>
   {% endfor %}
 </ul>

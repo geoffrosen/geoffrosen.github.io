@@ -10,8 +10,15 @@ body {
     color: red;
 }
 
-img {
-    width: 80%;
+.photoposts img {
+	width: 80%;
+}
+
+.photoposts ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	display: inline;
 }
 
 .posts a {
@@ -40,7 +47,7 @@ img {
 }
 
 .navbar img {
-	padding-left: 3%;
+	padding-left: 5px;
 	width: 20px;
 }
 

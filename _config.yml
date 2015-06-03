@@ -1,5 +1,5 @@
 highlighter: pygments
 title: Geoff Rosen
 url: http://geoffrosen.com
-paginate: 5
-paginate_path: "/blog/page:num"
+paginate: 1
+paginate_path: "/blog/page:num/"

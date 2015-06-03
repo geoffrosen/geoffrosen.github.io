@@ -1,0 +1,11 @@
+<div class="posts">
+{% assign i=0 %}
+<ul>
+  {% for post in site.categories.presentations %}
+    <li>
+      <h4>{{ post.title }}</h4> on {{ post.presentdate | date: '%B %d, %Y' }}
+	  <ul><li>{{ post.content }}</li></ul>
+    </li>
+  {% endfor %}
+</ul>
+</div>
