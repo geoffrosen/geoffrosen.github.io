@@ -1,11 +1,3 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset=utf-8 />
-  <title> {% if page.title %} {{ page.title }} | {% endif %} geoffrosen.com </title>
-  <link rel="stylesheet" href="css/main.css" />
-</head>
-<body>
+{% include header.html %}
 {{ content }}
-</body>
-</html>
+{% include footer.html %}
