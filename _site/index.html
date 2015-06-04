@@ -71,19 +71,50 @@
 <div class="row twelve columns">
 	<h4>Some Photos</h4>
 </div>
-<div id="posts" class="photoposts">
 
-<div class="row">
-	<div class="offset-by-one column"></div>
-	<div class="eleven columns"><h5>Zanzibar, Tanzania</h5> Summer 2014</div>
-</div>
-<div class="row">
-	<div class="offset-by-one column"></div>
-	<div class="eleven columns"><p><img src="/photos/img/zanzibar.jpg" alt="Jumping off boat" class="u-max-full-width" /></p>
-</div>
-</div>
+<p><!-- SlidesJS Required: Start Slides -->
+  <!-- The container is used to define the width of the slideshow --></p>
 
-</div>
+<div class="row"></div>
+
+<div class="u-max-full-width">
+    <div id="slides">
+	
+		<div class="slide">
+			<div class="row"><h5>Sun Moon Lake, Taiwan</h5> Summer 2014</div>
+			<img src="/photos/img/sunmoonlake.jpg" alt="Jumping off boat" class="u-max-full-width" />
+		</div>
+	
+		<div class="slide">
+			<div class="row"><h5>Zanzibar, Tanzania</h5> Summer 2014</div>
+			<img src="/photos/img/zanzibar.jpg" alt="Jumping off boat" class="u-max-full-width" />
+		</div>
+	
+      <a href="#" class="slidesjs-previous slidesjs-navigation">&lt;</a>
+      <a href="#" class="slidesjs-next slidesjs-navigation">&gt;</a>
+    </div>
+  </div>
+<p><!-- End SlidesJS Required: Start Slides --></p>
+
+<p><!-- SlidesJS Required: Link to jQuery -->
+  <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+  <!-- End SlidesJS Required --></p>
+
+<p><!-- SlidesJS Required: Link to jquery.slides.js -->
+  <script src="/js/jquery.slides.min.js"></script>
+  <!-- End SlidesJS Required --></p>
+
+<p><!-- SlidesJS Required: Initialize SlidesJS with a jQuery doc ready -->
+  <script>
+    $(function() {
+      $('#slides').slidesjs({
+        width: 940,
+        height: 600,
+        navigation: true
+      });
+    });
+  </script>
+  <!-- End SlidesJS Required --></p>
 
 <div class="footer">
 <hr>
