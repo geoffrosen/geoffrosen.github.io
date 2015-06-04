@@ -16,6 +16,7 @@ body {
 
 .navbar {
     text-transform: lowercase;
+	text-align: center;
 }
 
 .navbar a {
@@ -79,12 +80,11 @@ other_info {
 
 hr {
     display: block;
-    height: 4px;
     border: 0;
     border-top: 2px solid #000000;
-    margin: 1em 0;
+    margin: 0px;
     width: 80%;
-    padding: 0;
+    padding: 0px;
 }
 
 #nameandinfo {

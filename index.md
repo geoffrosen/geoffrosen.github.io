@@ -3,9 +3,7 @@ layout: default
 title: home
 ---
 
-Currently a medical student at Columbia. 
-
-Contact me [here](/contact.html)
+{% include hometop.html %}
 
 ### Recent happenings
 
