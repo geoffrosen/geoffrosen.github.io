@@ -1,6 +1,7 @@
 ---
 layout: post
-title: Poster for 2015 IDSA Student's and Resident Conference
+title: Poster for NIAID/IDSA Infectious Diseases Research Careers Meeting 2015
+presentloc: Bathesda, MD
 presentdate: 2015-06-05
 categories:
 - happenings
