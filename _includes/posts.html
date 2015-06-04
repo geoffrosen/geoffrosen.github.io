@@ -6,8 +6,14 @@
 </div>
 <div class="row">
 	<div class="offset-by-one column"></div>
-	<div class="eleven columns"><i>{{ post.date | date: '%B %d, %Y' }}</i> {% if post.presentdate %}abc {{ post.presentloc }}{% endif %}</div>
+	<div class="eleven columns"><small>Posted on</small><i> {{ post.date | date: '%B %d, %Y' }}</i></div>
 </div>
+{% if post.presentdate %}
+<div class="row">
+	<div class="offset-by-one column"></div>
+	<div class="eleven columns"><small>Presented on</small><i> {{ post.presentdate | date: '%B %d, %Y' }}</i> <small>in</small> {{ post.presentloc }}</div>
+</div>
+{% endif %}
 <div class="row">
 	<div class="offset-by-one column"></div>
 	<div class="ten columns">{{ post.excerpt }}</div>
