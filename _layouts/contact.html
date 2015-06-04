@@ -4,14 +4,14 @@
   <!-- the redirect_to is optional, the form will redirect to the referrer on submission -->
   <input type='hidden' name='redirect_to' value='{{ site.url }}/thanks.html' />
   <!-- all your input fields here.... -->
-  Name:
-  <input type='text' name='name' />
-  Email:
-  <input type='text' name='email' />
-  Phone (if you want):
-  <input type='text' name='phone' />
-  What's up? <br />
-  <textarea name="message" rows=4 cols=50></textarea>
-  <input type='submit' value='send message' />
+  <div class="row">Name:</div>
+  <input type='text' name='name' class="row"/>
+  <div class="row">Email:</div>
+  <input type='text' name='email' class="row" />
+  <div class="row">Phone (if you want):</div>
+  <input type='text' name='phone' class="row" />
+  <div class="row">What's up?</div>
+  <textarea name="message" class="u-full-width"></textarea>
+  <input type='submit' value='send message' class="row"/>
 </form>
 {% include footer.html %}

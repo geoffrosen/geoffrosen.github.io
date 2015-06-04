@@ -32,24 +32,24 @@
 <div class="one column"><a href="/about.html">About</a></div>
 <div class="one column"><a href="https://www.linkedin.com/in/geoffrosen" target="_blank"><img alt="linkedin" src="/img/icons/linkedin-icon.png" /></a></div>
 	</div>
-	<hr>
+	<hr class="row ten columns"><div class="offset-by-one column"></div>
 	</div>
 	
-<h3 id="i-should-get-back-to-you-shortly">I should get back to you shortly</h3>
+<h4 class="row twelve columns" id="i-should-get-back-to-you-shortly">I should get back to you shortly</h4>
 
 <form action="https://getsimpleform.com/messages?form_api_token=cdf93971a669622c4196a3144b8be60a" method="post">
   <!-- the redirect_to is optional, the form will redirect to the referrer on submission -->
   <input type='hidden' name='redirect_to' value='http://geoffrosen.com/thanks.html' />
   <!-- all your input fields here.... -->
-  Name:
-  <input type='text' name='name' />
-  Email:
-  <input type='text' name='email' />
-  Phone (if you want):
-  <input type='text' name='phone' />
-  What's up? <br />
-  <textarea name="message" rows=4 cols=50></textarea>
-  <input type='submit' value='send message' />
+  <div class="row">Name:</div>
+  <input type='text' name='name' class="row"/>
+  <div class="row">Email:</div>
+  <input type='text' name='email' class="row" />
+  <div class="row">Phone (if you want):</div>
+  <input type='text' name='phone' class="row" />
+  <div class="row">What's up?</div>
+  <textarea name="message" class="u-full-width"></textarea>
+  <input type='submit' value='send message' class="row"/>
 </form>
 <div class="footer">
 <hr>

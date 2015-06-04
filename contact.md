@@ -2,4 +2,6 @@
 layout: contact
 title: contact
 ---
-### I should get back to you shortly
+
+{:class="row twelve columns"}
+#### I should get back to you shortly
