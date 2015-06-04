@@ -33,18 +33,6 @@ body {
 	width: 20px;
 }
 
-.navbar ul {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	padding-left: 3%;
-	display: inline;
-}
-
-.navbar li {
-	display: inline;
-}
-
 .navbar h1 {
 	display: inline;
 }
