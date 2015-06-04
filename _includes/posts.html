@@ -6,7 +6,7 @@
 </div>
 <div class="row">
 	<div class="offset-by-one column"></div>
-	<div class="eleven columns"><i>{{ post.date | date: '%B %d, %Y' }}</i> {{ post.presentloc }}</div>
+	<div class="eleven columns"><i>{{ post.date | date: '%B %d, %Y' }}</i> {% if post.presentdate %}{{ post.presentloc }}{% endif %}</div>
 </div>
 <div class="row">
 	<div class="offset-by-one column"></div>
