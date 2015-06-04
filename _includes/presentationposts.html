@@ -2,7 +2,11 @@
 {% for post in site.categories.presentations %}
 <div class="row">
 	<div class="offset-by-one column"></div>
-	<div class="eleven columns"><h5>{{ post.title }}</h5> {{ post.presentdate | date: '%B %d, %Y' }} {{ post.presentloc }}</div>
+	<div class="eleven columns"><h5>{{ post.title }}</h5></div>
+</div>
+<div class="row">
+	<div class="offset-by-one column"></div>
+	<div class="eleven columns"><i>{{ post.presentdate | date: '%B %d, %Y' }} {{ post.presentloc }}</i></div>
 </div>
 <div class="row">
 	<div class="offset-by-one column"></div>
