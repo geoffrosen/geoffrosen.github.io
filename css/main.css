@@ -61,6 +61,10 @@ label {
     display: block;
 }
 
+h4 {
+	display: inline;
+}
+
 title_info {
     font-size: 1.3em;
     display: block;
