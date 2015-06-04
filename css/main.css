@@ -10,26 +10,7 @@ body {
     color: red;
 }
 
-.photoposts img {
-	width: 80%;
-}
-
-.photoposts ul {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	display: inline;
-}
-
-.posts a {
-	text-decoration: none;
-}
-
-.posts ul {
-	list-style-type: none;
-}
-
-.posts h4 {
+#posts h5 {
 	display: inline;
 }
 

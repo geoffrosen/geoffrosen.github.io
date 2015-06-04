@@ -1,11 +1,12 @@
-<div class="posts">
-{% assign i=0 %}
-<ul>
-  {% for post in site.categories.projects %}
-    <li>
-      <h4>{{ post.title }}</h4> {{ post.date | date: '%B %d, %Y' }}
-	  <ul><li>{{ post.content }}</li></ul>
-    </li>
-  {% endfor %}
-</ul>
+<div id="posts">
+{% for post in site.categories.projects %}
+<div class="row">
+	<div class="one column"></div>
+	<div class="eleven columns"><h5>{{ post.title }}</h5> {{ post.date | date: '%B %d, %Y' }}</div>
+</div>
+<div class="row">
+	<div class="two columns"><br ></div>
+	<div class="ten columns">{{ post.content }}</div>
+</div>
+{% endfor %}
 </div>

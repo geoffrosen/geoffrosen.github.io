@@ -1,16 +1,12 @@
-<div class="posts">
+<div id="posts">
+{% for post in site.categories.happenings limit:5 %}
 <div class="row">
-<div class="one column"></div>
-<div class="eleven columns">
-{% assign i=0 %}
-<ul>
-  {% for post in site.categories.happenings limit:5 %}
-    <li>
-      <h5>{{ post.title }}</h5> {{ post.date | date: '%B %d, %Y' }}
-	  <ul><li>{{ post.excerpt }}</li></ul>
-    </li>
-  {% endfor %}
-</ul>
+	<div class="one column"></div>
+	<div class="eleven columns"><h5>{{ post.title }}</h5> {{ post.date | date: '%B %d, %Y' }}</div>
 </div>
+<div class="row">
+	<div class="two columns"><br ></div>
+	<div class="ten columns">{{ post.excerpt }}</div>
 </div>
+{% endfor %}
 </div>

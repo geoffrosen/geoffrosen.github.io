@@ -5,6 +5,7 @@ presentdate: 2015-06-05
 categories:
 - happenings
 - presentations
+- posters
 ---
 
-Check out a poster I am presenting at the IDSA students and residents meeting in Bathesda on June 5th, 2015 [here](/presentations/attach/Rosen-IDSA2015Poster-as-Submitted.pdf)
+Check out a poster I am presenting at the IDSA students and residents meeting in Bathesda on June 5th, 2015 [here](/presentations/attach/Rosen-IDSA2015Poster-as-Submitted.pdf){:target="_blank"}

@@ -1,11 +1,12 @@
-<div class="photoposts">
-{% assign i=0 %}
-<ul>
-  {% for post in site.categories.photos limit:5 %}
-    <li>
-      <h4>{{ post.title }}</h4>
-	  <ul><li>{{ post.content }}</li></ul>
-    </li>
-  {% endfor %}
-</ul>
+<div id="posts" class="photoposts">
+{% for post in site.categories.photos limit:5 %}
+<div class="row">
+	<div class="one column"></div>
+	<div class="eleven columns"><h5>{{ post.location }}</h5> {{ post.dateinfo }}</div>
+</div>
+<div class="row">
+	<div class="one column"></div>
+	<div class="eleven columns">{{ post.content }}</div>
+</div>
+{% endfor %}
 </div>
