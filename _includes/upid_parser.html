@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>UPID Parser</title>
+  </head>
+  <body>
+    <script src="papaparse.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script>
+      var data;
+      var upids = [];
+      var unique_upids;
+      var item_delim = ',';
+      var line_delim = '\n';
+
+      function handleFileSelect(evt) {
+        var file = evt.target.files[0];
+
+        Papa.parse(file, {
+          header: true,
+          dynamicTyping: true,
+          complete: function(results) {
+            for (var i = 0; i < results.data.length; i++) {
+              var upid = results.data[i]['UPID'];
+              upids.push(upid);
+            };
+            unique_upids = upids.filter(function(item, i, ar){ return ar.indexOf(item) === i; });
+            console.log("Finished:", unique_upids);
+          }
+        });
+      }
+
+      function makeCSV() {
+        result = 'UPID,dummyVar\n';
+        for (var i = 0; i < unique_upids.length; i++) {
+          this_upid = unique_upids[i];
+          if (this_upid != "") {
+            result += unique_upids[i];
+            result += item_delim;
+            result += "1";
+            result += line_delim;
+          }
+        }
+        return result;
+      }
+
+      $(document).ready(function(){
+        $("#csv-file").change(handleFileSelect);
+        $('#submit-parse').click(function() {
+          csvText = makeCSV()
+          console.log(csvText);
+          for (var i = 0; i < unique_upids.length; i++) {
+            console.log(unique_upids[i]);
+          }
+          var hiddenElement = document.createElement('a');
+          hiddenElement.href = 'data:text/csv;charset=utf-8,' + encodeURI(csvText);
+          hiddenElement.targer = '_blank';
+          hiddenElement.download = 'unique_upids.csv';
+          hiddenElement.click();
+        });
+      });
+    </script>
+    <input type="file" id="csv-file" name="files"/>
+    <button id="submit-parse">Parse</button>
+  </body>
+</html>
