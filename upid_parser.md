@@ -1,6 +1,8 @@
 ---
 layout: default
-title: home
+title: UPID Parser
 ---
+
+### UPID Parser
 
 {% include upid_parser.html %}
