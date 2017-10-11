@@ -6,6 +6,7 @@
   var unique_upids;
   var item_delim = ',';
   var line_delim = '\n';
+  var csvText = 'UPID,dummyVar\n';
 
   function handleFileSelect(evt) {
 	var file = evt.target.files[0];
@@ -19,42 +20,32 @@
 		  upids.push(upid);
 		};
 		unique_upids = upids.filter(function(item, i, ar){ return ar.indexOf(item) === i; });
-		console.log("Finished:", unique_upids);
+		for (var i = 0; i < unique_upids.length; i++) {
+		  this_upid = unique_upids[i];
+		  if (this_upid != "") {
+			csvText += unique_upids[i];
+			csvText += item_delim;
+			csvText += "1";
+			csvText += line_delim;
+		  }
+		}
+		console.log(csvText);
+		var hiddenElement = document.createElement('a');
+		hiddenElement.href = 'data:text/csv;charset=utf-8,' + encodeURI(csvText);
+		hiddenElement.targer = '_blank';
+		hiddenElement.download = 'unique_upids.csv';
+		hiddenElement.click();
 	  }
 	});
+
   }
 
-  function makeCSV() {
-	result = 'UPID,dummyVar\n';
-	for (var i = 0; i < unique_upids.length; i++) {
-	  this_upid = unique_upids[i];
-	  if (this_upid != "") {
-		result += unique_upids[i];
-		result += item_delim;
-		result += "1";
-		result += line_delim;
-	  }
-	}
-	return result;
-  }
 
   $(document).ready(function(){
 	$("#csv-file").change(handleFileSelect);
-	$('#submit-parse').click(function() {
-	  csvText = makeCSV()
-	  console.log(csvText);
-	  for (var i = 0; i < unique_upids.length; i++) {
-		console.log(unique_upids[i]);
-	  }
-	  var hiddenElement = document.createElement('a');
-	  hiddenElement.href = 'data:text/csv;charset=utf-8,' + encodeURI(csvText);
-	  hiddenElement.targer = '_blank';
-	  hiddenElement.download = 'unique_upids.csv';
-	  hiddenElement.click();
-	});
   });
 </script>
 <div class="row">
+
 <input type="file" id="csv-file" name="files"/>
-<button id="submit-parse">Parse</button>
 </div>
